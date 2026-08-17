@@ -88,7 +88,7 @@ void velocityVerlet(double dt) {
 int main() {
     initialize();
     double dt = 0.005;
-    ofstream file("pressure.data");
+    ofstream file("datas/pressure.data");
     file << "Time P_measured P_ideal\n";
 
     double time = 0.0;
@@ -118,7 +118,7 @@ int main() {
         if (i % 200 == 0) rescaleVelocities();
     }
     file.close();
-    cout << "Simulation complete. Pressure data saved to 'pressure.data'." << endl;
+    cout << "Simulation complete. Pressure data saved to 'datas/pressure.data'." << endl;
 }
 
 void initPositions() {

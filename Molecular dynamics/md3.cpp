@@ -159,7 +159,7 @@ int main() {
     updatePairSeparations();
     computeAccelerations();
     double dt = 0.005;
-    ofstream file("thermo.data");
+    ofstream file("datas/thermo.data");
 
     file << "T_inst E_tot P Z\n";
     auto start_time = chrono::high_resolution_clock::now();
