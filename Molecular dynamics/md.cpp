@@ -82,7 +82,7 @@ double instantaneousTemperature() {
 int main() {
     initialize();
     double dt = 0.01;
-    ofstream file("T.data");
+    ofstream file("datas/T.data");
     for (int i = 0; i < 1000; i++) {
         velocityVerlet(dt);
         file << instantaneousTemperature() << '\n';

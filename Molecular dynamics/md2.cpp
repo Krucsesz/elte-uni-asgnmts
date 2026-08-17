@@ -182,7 +182,7 @@ double instantaneousTemperature() {
 int main() {
     initialize();
     double dt = 0.01;
-    ofstream file("T2.data");
+    ofstream file("datas/T2.data");
 
     auto start_time = chrono::high_resolution_clock::now();
 
