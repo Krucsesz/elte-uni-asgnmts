@@ -4,8 +4,8 @@ A comprehensive collection of numerical physics models, dynamical system simulat
 
 While originating from coursework, this repository demonstrates my ability to implement complex mathematical models from scratch, solve differential equations numerically, and structure reusable code.
 
-## 🧠 Core Highlight: Custom Numerical Library
-* **[`/cpl`](./cpl)** — A shared C++ utility library built to support various simulations. It includes implementations for **Fast Fourier Transform (FFT)**, ODE integration, mathematical optimization, matrix/vector operations, interpolation, and random number generation.
+## Core Highlight: Custom Numerical Library
+* **[`/cpl`](./cpl)** — A shared C++ utility library built to support various simulations. It includes implementations for Fast Fourier Transform, ODE integration, mathematical optimization, matrix/vector operations, interpolation, and random number generation.
 
 ## Simulation Projects
 
