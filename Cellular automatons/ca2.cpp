@@ -66,13 +66,13 @@ int main() {
         }
     }
 
-    ofstream file("sandpile.data");
+    ofstream file("datas/sandpile.data");
     file << "Size Count\n";
     for (auto const& [size, count] : avalanche_counts) {
         file << size << " " << count << "\n";
     }
     file.close();
 
-    cout << "Done, results saved to sandpile.data" << endl;
+    cout << "Done, results saved to datas/sandpile.data" << endl;
     return 0;
 }

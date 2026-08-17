@@ -28,7 +28,7 @@ int main() {
     int skip_frames = 20;
 
     Vector y_old(N + 1), y_curr(N + 1), y_new(N + 1);
-    ofstream dataFile("string_friction.data");
+    ofstream dataFile("datas/string_friction.data");
 
     const double pi = 4 * atan(1.0);
 
@@ -65,6 +65,6 @@ int main() {
     }
 
     dataFile.close();
-    cout << " Friction simulation completed and data saved to string_friction.data" << endl;
+    cout << " Friction simulation completed and data saved to datas/string_friction.data" << endl;
     return 0;
 }

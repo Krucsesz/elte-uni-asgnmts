@@ -12,7 +12,7 @@ void runStabilityMap() {
     cout << " Stability map generation..." << endl;
     double L = 1.0, rho = 0.01, T = 10.0;
     double c = sqrt(T / rho);
-    ofstream file("stability_map.data");
+    ofstream file("datas/stability_map.data");
 
     int resolution = 50;
     // dx és dt rács végigpásztázása
@@ -56,7 +56,7 @@ void runStabilityMap() {
         }
     }
     file.close();
-    cout << " Done, stability map saved to stability_map.data\n";
+    cout << " Done, stability map saved to datas/stability_map.data\n";
 }
 
 int main() {
@@ -91,7 +91,7 @@ int main() {
     Vector y_curr(N + 1);
     Vector y_new(N + 1);
 
-    string filename = (choice == 1) ? "string_plucked.data" : "string_normal.data";
+    string filename = (choice == 1) ? "datas/string_plucked.data" : "datas/string_normal.data";
     ofstream dataFile(filename);
 
     const double pi = 4 * atan(1.0);

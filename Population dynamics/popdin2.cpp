@@ -37,7 +37,7 @@ State rk4_step(State s, double dt, double r1, double r2, double k1, double k2, d
 
 // 1. kompetitív kizárás
 void run_exclusion() {
-    ofstream file("exclusion.data");
+    ofstream file("datas/exclusion.data");
     file << "Time n1 n2\n";
 
     double r1 = 1.0, r2 = 1.0;
@@ -53,12 +53,12 @@ void run_exclusion() {
         s = rk4_step(s, dt, r1, r2, k1, k2, alpha, beta);
     }
     file.close();
-    cout << "Competitive exclusion data saved to exclusion.data." << endl;
+    cout << "Competitive exclusion data saved to datas/exclusion.data." << endl;
 }
 
 // 2. fázistér vizsgálat
 void run_phase_space() {
-    ofstream file("coexistence.data");
+    ofstream file("datas/coexistence.data");
     file << "X Y Survivors\n";
 
     double r1 = 1.0, r2 = 1.0;
@@ -85,7 +85,7 @@ void run_phase_space() {
         }
     }
     file.close();
-    cout << "Coexistence phase space data saved to coexistence.data." << endl;
+    cout << "Coexistence phase space data saved to datas/coexistence.data." << endl;
 }
 
 int main() {

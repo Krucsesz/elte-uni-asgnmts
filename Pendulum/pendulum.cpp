@@ -80,7 +80,7 @@ void runSinglePendulum() {
 
     double dt = 0.05;
     double accuracy = 1e-6;
-    ofstream dataFile("pendulum.data");
+    ofstream dataFile("datas/pendulum.data");
 
     double t = 0;
     Vector x(3);
@@ -119,7 +119,7 @@ void runSinglePendulum() {
         dataFile << t << '\t' << theta << '\t' << omega << '\t' << E << '\n';
     }
 
-    cout << " Output data to file pendulum.data" << endl;
+    cout << " Output data to file datas/pendulum.data" << endl;
     dataFile.close();
 }
 
@@ -160,7 +160,7 @@ void runDoublePendulum() {
 
     double dt = 0.05;
     double accuracy = 1e-6;
-    ofstream dataFile("double_pendulum.data");
+    ofstream dataFile("datas/double_pendulum.data");
 
     double t = 0;
     Vector x(5);
@@ -176,7 +176,7 @@ void runDoublePendulum() {
 
         dataFile << t << '\t' << x[1] << '\t' << x[2] << '\t' << x[3] << '\t' << x[4] << '\t' << E << '\n';
     }
-    cout << " Output data to file double_pendulum.data\n";
+    cout << " Output data to file datas/double_pendulum.data\n";
     dataFile.close();
 
 }

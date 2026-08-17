@@ -45,7 +45,7 @@ void run_1d_ca() {
             grid[t][x] = grid[t-1][x-1] ^ grid[t-1][x+1];
         }
     }
-    box_count(grid, "box_1d.data");
+    box_count(grid, "datas/box_1d.data");
     cout << "1D automaton box counting done." << endl;
 }
 
@@ -82,7 +82,7 @@ void run_forest_fire() {
     vector<vector<int>> fire_grid(L, vector<int>(L, 0));
     for(int i=0; i<L; ++i) for(int j=0; j<L; ++j) if(grid[i][j]==2) fire_grid[i][j]=1;
 
-    box_count(fire_grid, "box_forest.data");
+    box_count(fire_grid, "datas/box_forest.data");
     cout << "Forest fire box counting done." << endl;
 }
 
@@ -110,7 +110,7 @@ void run_gol() {
         }
         grid = next_grid;
     }
-    box_count(grid, "box_gol.data");
+    box_count(grid, "datas/box_gol.data");
     cout << "Game of Life box counting done." << endl;
 }
 

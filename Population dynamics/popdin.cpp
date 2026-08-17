@@ -60,7 +60,7 @@ double adaptive_rk4(double r, double x, double t_start, double t_end) {
 }
 
 void run_comparison() {
-    ofstream file("comparison.data");
+    ofstream file("datas/comparison.data");
     file << "Time Analytic Euler Adaptive_RK4\n";
 
     double r = 1.0;
@@ -80,11 +80,11 @@ void run_comparison() {
         x_rk = adaptive_rk4(r, x_rk, t, t + dt_out);
     }
     file.close();
-    cout << "Data saved to comparison.data." << endl;
+    cout << "Data saved to datas/comparison.data." << endl;
 }
 
 void run_page7_plots() {
-    ofstream file("page7.data");
+    ofstream file("datas/page7.data");
     file << "r x0 Time x\n";
 
     vector<double> r_values = {-1.0, -0.5, 0.0, 0.5, 1.0};
@@ -102,7 +102,7 @@ void run_page7_plots() {
         }
     }
     file.close();
-    cout << "Data saved to page7.data." << endl;
+    cout << "Data saved to datas/page7.data." << endl;
 }
 
 int main() {
