@@ -45,7 +45,7 @@ State rk4_step(State s, double dt) {
 }
 
 int main() {
-    ofstream file("food_chain.data");
+    ofstream file("datas/food_chain.data");
     file << "Time N1 N2 N3\n";
 
     State s = {150.0, 100.0, 20.0}; // kezdeti populációk
@@ -58,6 +58,6 @@ int main() {
     }
     
     file.close();
-    cout << "3 species population data saved to food_chain.data\n";
+    cout << "3 species population data saved to datas/food_chain.data\n";
     return 0;
 }

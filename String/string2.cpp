@@ -76,13 +76,13 @@ int main() {
     }
 
     cout << " 5/a: testing linearity \n";
-    solveWave(y_ic1, "lin_ic1.data", N, C2, steps, skip_frames);
-    solveWave(y_ic2, "lin_ic2.data", N, C2, steps, skip_frames);
-    solveWave(y_ic_sum, "lin_sum.data", N, C2, steps, skip_frames);
+    solveWave(y_ic1, "datas/lin_ic1.data", N, C2, steps, skip_frames);
+    solveWave(y_ic2, "datas/lin_ic2.data", N, C2, steps, skip_frames);
+    solveWave(y_ic_sum, "datas/lin_sum.data", N, C2, steps, skip_frames);
     
     cout << " 5/b: simulating mixed normal modes \n";
-    solveWave(y_mixed, "mixed_modes.data", N, C2, steps, skip_frames);
+    solveWave(y_mixed, "datas/mixed_modes.data", N, C2, steps, skip_frames);
 
-    cout << " Done, data saved to lin_ic1.data, lin_ic2.data, lin_sum.data, and mixed_modes.data\n";
+    cout << " Done, data saved to datas/lin_ic1.data, datas/lin_ic2.data, datas/lin_sum.data, and datas/mixed_modes.data\n";
     return 0;
 }

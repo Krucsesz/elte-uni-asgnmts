@@ -53,12 +53,12 @@ void run_lv_simulation(string filename, double a, double b, double c, double d, 
 int main() {
     // a=0.4, b=0.001, c=0.001, d=0.9
     // kf.: Nyúl=500, Róka=500
-    run_lv_simulation("lv_set1.data", 0.4, 0.001, 0.001, 0.9, 500.0, 500.0);
+    run_lv_simulation("datas/lv_set1.data", 0.4, 0.001, 0.001, 0.9, 500.0, 500.0);
 
     // a=0.4, b=0.004, c=0.004, d=0.9
     // kf.: Nyúl=400, Róka=400
-    run_lv_simulation("lv_set2.data", 0.4, 0.004, 0.004, 0.9, 400.0, 400.0);
+    run_lv_simulation("datas/lv_set2.data", 0.4, 0.004, 0.004, 0.9, 400.0, 400.0);
 
-    cout << "Lotka-Volterra simulations completed and saved to lv_set1.data and lv_set2.data." << endl;
+    cout << "Lotka-Volterra simulations completed and saved to datas/lv_set1.data and datas/lv_set2.data." << endl;
     return 0;
 }

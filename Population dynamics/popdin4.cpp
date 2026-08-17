@@ -51,11 +51,11 @@ void run_mod_lv_simulation(string filename, double a, double b, double c, double
 
 int main() {
     // 1. eset: csak a nyulak kapacitása véges (K=800), telítődés nincs
-    run_mod_lv_simulation("mod_lv_K.data", 0.4, 0.004, 0.004, 0.9, 800.0, 1e9, 500.0, 500.0, 100.0);
+    run_mod_lv_simulation("datas/mod_lv_K.data", 0.4, 0.004, 0.004, 0.9, 800.0, 1e9, 500.0, 500.0, 100.0);
 
     // 2. eset: csak a rókák fogyasztása telítődik (S=2500), kapacitás nincs
-    run_mod_lv_simulation("mod_lv_S.data", 0.4, 0.004, 0.004, 0.9, 1e9, 2500.0, 500.0, 500.0, 100.0);
+    run_mod_lv_simulation("datas/mod_lv_S.data", 0.4, 0.004, 0.004, 0.9, 1e9, 2500.0, 500.0, 500.0, 100.0);
 
-    cout << "Simulations completed, data saved to mod_lv_K.data and mod_lv_S.data" << endl;
+    cout << "Simulations completed, data saved to datas/mod_lv_K.data and datas/mod_lv_S.data" << endl;
     return 0;
 }
